@@ -22,13 +22,15 @@ public class FizzBuzz {
     }
 
     public String findFizzBuzz() {
+        String ans = "";
         if(isFizz()){
-            return "Fizz";
+            ans += "Fizz";
         }
-        else
+
         if(isBuzz()) {
-            return "Buzz";
+            ans += "Buzz";
         }
-        return null;
+
+        return ans;
     }
 }
