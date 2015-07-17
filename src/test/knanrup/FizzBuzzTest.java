@@ -25,4 +25,11 @@ public class FizzBuzzTest {
         String str = fb.findFizzBuzz();
         Assert.assertEquals("FizzBuzz",str);
     }
+
+    @Test
+    public void forNumber4Blah(){
+        FizzBuzz fb = new FizzBuzz(4);
+        String str = fb.findFizzBuzz();
+        Assert.assertEquals("Blah",str);
+    }
 }

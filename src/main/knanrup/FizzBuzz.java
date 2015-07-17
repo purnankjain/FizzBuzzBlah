@@ -23,14 +23,23 @@ public class FizzBuzz {
 
     public String findFizzBuzz() {
         String ans = "";
+        boolean flag = false;
+
         if(isFizz()){
             ans += "Fizz";
+            flag = true;
         }
 
         if(isBuzz()) {
+            flag = true;
             ans += "Buzz";
         }
 
-        return ans;
+        if(flag){
+            return ans;
+        }
+        else{
+            return "Blah";
+        }
     }
 }
