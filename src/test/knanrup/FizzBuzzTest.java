@@ -11,4 +11,11 @@ public class FizzBuzzTest {
         String str = fb.findFizzBuzz();
         Assert.assertEquals("Fizz",str);
     }
+
+    @Test
+    public void forNumber5buzz(){
+        FizzBuzz fb = new FizzBuzz(5);
+        String str = fb.findFizzBuzz();
+        Assert.assertEquals("Buzz",str);
+    }
 }
